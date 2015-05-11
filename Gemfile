@@ -10,6 +10,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'omniauth-instagram', '~> 1.0.1'
 gem 'omniauth'
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootswatch-rails'
+
 
 group :production do
   gem 'rails_12factor'
