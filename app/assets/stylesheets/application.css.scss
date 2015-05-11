@@ -2,3 +2,7 @@
 @import "bootswatch/slate/variables";
 @import "bootstrap";
 @import "bootswatch/slate/bootswatch";
+
+.profile_pic img {
+  border-radius: 50%;
+}
