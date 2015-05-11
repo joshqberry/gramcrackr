@@ -5,6 +5,13 @@ class SessionsController < ApplicationController
     redirect_to users_path, notice: "Hey, it worked!"
   end
 
+  def destroy
+   session[:user_id] = nil
+   session[:user_token] = nil
+   session[:user_secret] = nil
+   redirect_to visitors_path, notice: "Logged out."
+  end
+
   protected
 
   def auth_hash

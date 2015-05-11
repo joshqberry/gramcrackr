@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'testing' => 'welcome#testing'
+  get 'index2' => 'welcome#index2'
   get '/auth/instagram/callback', to: 'sessions#create'
 
   # Example of regular route:
