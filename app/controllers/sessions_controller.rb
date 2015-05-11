@@ -6,10 +6,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-   session[:user_id] = nil
-   session[:user_token] = nil
-   session[:user_secret] = nil
-   redirect_to visitors_path, notice: "Logged out."
+    session.clear
+    redirect_to root_path, notice: "We're sorry to see you go!"
   end
 
   protected

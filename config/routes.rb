@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'testing' => 'welcome#testing'
   get 'index2' => 'welcome#index2'
   get '/auth/instagram/callback', to: 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
