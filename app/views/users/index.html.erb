@@ -1,6 +1,25 @@
-<p>Hi there you made it <%= current_user.name %>!</p>
-<div class='profile_pic'><%= image_tag(current_user.image) %></div>
+<div class="row">
+  <div class="col-md-2 col-md-offset-1">
+    <center>
+      <div class='profile_pic'><%= image_tag(current_user.image) %></div>
+      <h1><%= current_user.name %></h1>
+      <%= link_to 'Log Out', logout_path %>
+    </center>
+  </div>
 
+  <div class="col-md-9">
+    <p id="photos">
+  </div>
+</div>
 
+<script>
+  $(document).on('ready', function() {
 
-<%= link_to 'Log Out', logout_path %>
+    $.get("https://jsonp.afeld.me/?url=https://api.instagram.com/v1/users/self/media/liked?access_token=<%= current_user.token %>", function(data){
+      // $( "#photos" ).append(JSON.stringify(data));
+      $.each(data['data'], function(i, val) {
+        $( "#photos" ).append("<img src='" + val['images']['low_resolution']['url'] + "'>");
+      });
+    });
+  });
+</script>
