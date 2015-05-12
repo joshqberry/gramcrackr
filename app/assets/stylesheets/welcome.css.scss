@@ -1,0 +1,41 @@
+#photo {
+  background-image: url(/crackers.jpg);
+  height: 1000px;
+  z-index: -100;
+  opacity: 0.8;
+
+}
+
+#photo_text {
+  margin-top: 10%;
+  // background-color: #000;
+
+}
+
+#photo_text h1 {
+  font-size: 100px;
+  text-align: center;
+}
+#photo_text h3 {
+  font-size: 3em;
+}
+
+//phone screens
+@media (max-width: 480px){
+  #photo {
+    background-image: url(/crackers.jpg);
+    height: 600px;
+    z-index: -100;
+    opacity: 0.8;
+  }
+  #photo_text {
+    margin-top: 25%;
+    // background-color: #000;
+
+  }
+  #photo_text h1 {
+    font-size: 50px;
+    text-align: center;
+
+  }
+}
