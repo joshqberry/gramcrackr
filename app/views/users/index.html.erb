@@ -14,11 +14,13 @@
 
 <script>
   $(document).on('ready', function() {
-
-    $.get("https://jsonp.afeld.me/?url=https://api.instagram.com/v1/users/self/media/liked?access_token=<%= current_user.token %>", function(data){
-      // $( "#photos" ).append(JSON.stringify(data));
-      $.each(data['data'], function(i, val) {
-        $( "#photos" ).append("<img src='" + val['images']['low_resolution']['url'] + "'>");
+    $.get("https://jsonp.afeld.me/?url=https://api.instagram.com/v1/users/self/media/liked?access_token=<%= current_user.token %>&count=50", function(data){
+         $.each(data['data'], function(i, val) {
+           if (val['videos'] === undefined) {
+             $( "#photos" ).append("<img src='" + val['images']['low_resolution']['url'] + "'>");
+           } else {
+             $( "#photos" ).append("<video width='320' height='320' controls><source src='" + val['videos']['low_resolution']['url'] + "'  type='video/mp4'/></video>");
+           }
       });
     });
   });
