@@ -1,41 +1,102 @@
-#photo {
-  background-image: url(/crackers.jpg);
-  height: 1000px;
-  z-index: -100;
-  opacity: 0.8;
-
+@import "bootstrap-sprockets";
+@import "bootswatch/slate/variables";
+@import "bootstrap";
+@import "bootswatch/slate/bootswatch";
+//screen
+@media (min-width: 768px){
+  #photo {
+    background-image: url(/crackers.jpg);
+    background-attachment: fixed;
+    height: 1000px;
+    z-index: -100;
+  }
+  .logo img {
+    align: center;
+    width: 100%;
+    margin-top: 15%;
+  }
+  .tagline {
+    margin-top: 1%;
+    margin-bottom: 40%;
+    color: #fff;
+    font-size: 34px;
+    font-style: italic;
+    text-align: right;
+  }
+  .about {
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+  .about p {
+    color: #6A461F;
+    font-size: 36px;
+    margin-top: 5%;
+  }
 }
-
-#photo_text {
-  margin-top: 10%;
-  // background-color: #000;
-
+//tablets
+@media (max-width: 768px){
+  #photo {
+    background-image: url(/crackers.jpg);
+    background-attachment: fixed;
+    height: 1000px;
+    z-index: -100;
+  }
+  .logo img {
+    align: center;
+    width: 100%;
+    margin-top: 15%;
+  }
+  .tagline {
+    margin-top: 1%;
+    margin-bottom: 40%;
+    color: #fff;
+    font-size: 34px;
+    font-style: italic;
+    text-align: right;
+  }
+  .about {
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+  .about p {
+    color: #6A461F;
+    font-size: 36px;
+    margin-top: 5%;
+  }
 }
-
-#photo_text h1 {
-  font-size: 100px;
-  text-align: center;
-}
-#photo_text h3 {
-  font-size: 3em;
-}
-
 //phone screens
 @media (max-width: 480px){
   #photo {
     background-image: url(/crackers.jpg);
-    height: 600px;
+    background-attachment: fixed;
+    height: 1000px;
     z-index: -100;
-    opacity: 0.8;
   }
-  #photo_text {
-    margin-top: 25%;
-    // background-color: #000;
-
+  .logo img {
+    align: center;
+    width: 100%;
+    margin-top: 45%;
   }
-  #photo_text h1 {
-    font-size: 50px;
-    text-align: center;
-
+  .tagline {
+    margin-top: 1%;
+    margin-bottom: 80%;
+    color: #fff;
+    font-size: 24px;
+    font-style: italic;
+    text-align: right;
+  }
+  .about {
+    background-color: #fff;
+    width: 100%;
+    height: 250px;
+  }
+  .about p {
+    color: #6A461F;
+    font-size: 20px;
+    margin-top: 10%;
   }
 }
