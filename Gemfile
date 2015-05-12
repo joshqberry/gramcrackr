@@ -12,6 +12,7 @@ gem 'omniauth-instagram', '~> 1.0.1'
 gem 'omniauth'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootswatch-rails'
+gem 'gaffe'
 
 
 group :production do
