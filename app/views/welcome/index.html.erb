@@ -1,8 +1,29 @@
-<div id="photo">
-<div>
+<body id="photo">
 
-<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3" id="photo_text">
 
-  <h1>Gramcrackr</h1>
-  <h3><%= link_to "Log in with Instagram", '/auth/instagram' %></h3>
+<div class='row'>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+
+    <div class='logo'><%= image_tag("gramcrackr-logo.png") %></div>
+    <div class='tagline'>Album creation from your favorite social media.</div>
+
+  </div>
 </div>
+<div class='about'>
+  <div class='row'>
+    <div class='col-xs-10 col-xs-offset-1'>
+      <p><strong>Social media can encapsule the world in hours, and fall off the map just as quickly.
+        Gramcrackr lets you search social media images and save them to albums
+        at the touch of a button for future use.
+      </strong></p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col-xs-10 col-xs-offset-1'>
+      <h3><%= link_to "Log in with Instagram", '/auth/instagram' %></h3>
+  </div>
+</div>
+</div>
+</body>
