@@ -1,20 +1,8 @@
-@import "bootstrap-sprockets";
-@import "bootswatch/slate/variables";
-@import "bootstrap";
-@import "bootswatch/slate/bootswatch";
-
-
-
-.profile_pic img {
-  border-radius: 50%;
-}
-
 #photo {
   background-image: url(/crackers.jpg);
   height: 1000px;
   z-index: -100;
   opacity: 0.8;
-
 
 }
 
@@ -30,7 +18,6 @@
 }
 #photo_text h3 {
   font-size: 3em;
-  text-align: center;
 }
 
 //phone screens
