@@ -1,6 +1,27 @@
-<p>Hi there you made it <%= current_user.name %>!</p>
-<div class='profile_pic'><%= image_tag(current_user.image) %></div>
+<div class="row">
+  <div class="col-md-2 col-md-offset-1">
+    <center>
+      <div class='profile_pic'><%= image_tag(current_user.image) %></div>
+      <h1><%= current_user.name %></h1>
+      <%= link_to 'Log Out', logout_path %>
+    </center>
+  </div>
 
+  <div class="col-md-9">
+    <p id="photos">
+  </div>
+</div>
 
-
-<%= link_to 'Log Out', logout_path %>
+<script>
+  $(document).on('ready', function() {
+    $.get("https://jsonp.afeld.me/?url=https://api.instagram.com/v1/users/self/media/liked?access_token=<%= current_user.token %>&count=50", function(data){
+         $.each(data['data'], function(i, val) {
+           if (val['videos'] === undefined) {
+             $( "#photos" ).append("<img src='" + val['images']['low_resolution']['url'] + "'>");
+           } else {
+             $( "#photos" ).append("<video width='320' height='320' controls><source src='" + val['videos']['low_resolution']['url'] + "'  type='video/mp4'/></video>");
+           }
+      });
+    });
+  });
+</script>
