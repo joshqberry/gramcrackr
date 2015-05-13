@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   resources :users, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,9 +8,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get 'local' => 'welcome#local_photos'
-  get 'index2' => 'welcome#index2'
+  post '/welcome', to: 'welcome#local_photos'
+
+  get '/local' => 'welcome#local_photos'
+
   get '/auth/instagram/callback', to: 'sessions#create'
+
   get '/logout' => 'sessions#destroy'
 
   # Example of regular route:

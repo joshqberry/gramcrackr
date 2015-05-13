@@ -4,12 +4,25 @@
       <div class='profile_pic'><%= image_tag(current_user.image) %></div>
       <h1><%= current_user.name %></h1>
       <%= link_to 'Log Out', logout_path %>
+      <br>
+      <br>
+      <%= link_to 'See local photos!', local_path %>
+      <br>
+      <br>
+      Search for photos by tag:
+      <br>
+      <br>
+      <%= form_tag('/welcome') %>
+      <%= text_field_tag :searchterm %>
+      <br>
+      <br>
+      <%= submit_tag "Search"%>
     </center>
   </div>
 
   <div class="col-md-9">
 
-    <% @data.denver_pics(current_user.token)["data"].each do |val| %>
+    <% @viewdata["data"].each do |val| %>
       <img src="<%= val['images']['low_resolution']['url'] %>">
     <% end %>
 
