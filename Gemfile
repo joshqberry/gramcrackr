@@ -13,6 +13,7 @@ gem 'omniauth'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootswatch-rails'
 gem 'gaffe'
+gem 'faraday'
 
 
 group :production do

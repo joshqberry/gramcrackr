@@ -4,6 +4,8 @@
       <div class='profile_pic'><%= image_tag(current_user.image) %></div>
       <h1><%= current_user.name %></h1>
       <%= link_to 'Log Out', logout_path %>
+      <br>
+      <%= link_to 'see local photos', local_path %>
     </center>
   </div>
 

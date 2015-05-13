@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get 'testing' => 'welcome#testing'
+  get 'local' => 'welcome#local_photos'
   get 'index2' => 'welcome#index2'
   get '/auth/instagram/callback', to: 'sessions#create'
   get '/logout' => 'sessions#destroy'

@@ -217,6 +217,7 @@ DEPENDENCIES
   bootswatch-rails
   coffee-rails (~> 4.1.0)
   dotenv-rails
+  faraday
   gaffe
   jbuilder (~> 2.0)
   jquery-rails
