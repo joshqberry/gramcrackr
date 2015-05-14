@@ -13,6 +13,18 @@ class PhotosController < ApplicationController
     end
   end
 
+  def local
+      @data = DataGetter.new
+    if params[:searchterm]
+      @searchterm = params[:searchterm]
+      @viewdata = @data.search_by_tag(current_user.token, @searchterm)
+    else
+      @searchterm = "denver"
+      @viewdata = @data.search_by_tag(current_user.token, @searchterm)
+    end
+  end
+
+
   private
 
   def photo_params
