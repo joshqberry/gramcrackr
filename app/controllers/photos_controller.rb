@@ -16,7 +16,7 @@ class PhotosController < ApplicationController
   def local
       @data = DataGetter.new
     if params[:searchterm]
-      @searchterm = params[:searchterm].gsub(" ","")
+      @searchterm = params[:searchterm].gsub(" ","").gsub("#","")
       @viewdata = @data.search_by_tag(current_user.token, @searchterm)
     else
       @searchterm = "denver"
