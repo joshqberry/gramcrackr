@@ -19,6 +19,29 @@
       </div>
     <% end %>
 
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1">
+        <center>
+          <div class='profile_pic'><%= image_tag(current_user.image) %></div>
+          <h1><%= current_user.name %></h1>
+          <%= link_to 'Log Out', logout_path %>
+          <br>
+          <br>
+          <%= link_to 'See local photos!', local_path %>
+          <br>
+          <br>
+          Search for photos by tag:
+          <br>
+          <br>
+          <%= form_tag('/welcome') %>
+          <%= text_field_tag :searchterm %>
+          <br>
+          <br>
+          <%= submit_tag "Search"%>
+        </center>
+      </div>
+
+
       <%= yield %>
 
 </body>

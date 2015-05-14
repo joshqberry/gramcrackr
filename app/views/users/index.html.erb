@@ -1,14 +1,3 @@
-<div class="row">
-  <div class="col-md-2 col-md-offset-1">
-    <center>
-      <div class='profile_pic'><%= image_tag(current_user.image) %></div>
-      <h1><%= current_user.name %></h1>
-      <%= link_to 'Log Out', logout_path %>
-      <br>
-      <%= link_to 'see local photos', local_path %>
-    </center>
-  </div>
-
   <div class="col-md-9 effects clearfix" id="slide-up">
     <!-- <div class="img">
       <div class="overlay">
@@ -17,8 +6,6 @@
       </div>
     </div> -->
   </div>
-
-</div>
 
 <script>
   $(document).on('ready', function() {
