@@ -26,7 +26,7 @@
       <div class="col-xs-12 col-sm-3">
         <center>
           <div class='nav-logo'><a href="/users"><%= image_tag('gram-logo-outline1.png') %></a></div>
-          <div class='profile_pic'><%= image_tag(current_user.image) %></div>
+          <div class='profile_pic'><a href="/photos"><%= image_tag(current_user.image) %></a></div>
           <div class="row">
             <%= form_tag('/search', class: 'form-inline') %>
             <%= text_field_tag :searchterm, nil, class:'form-control' %>
