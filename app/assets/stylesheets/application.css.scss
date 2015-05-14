@@ -20,17 +20,52 @@
   background: #70003F;
 }
 //screen
-.col-md-2 {
-  background-image: url(/crackers.jpg);
-  background-position: center;
-  min-height: 1000px;
-  border: 1px solid;
-  border-color: #fff;
-}
+@media (min-width: 768px){
+  .col-sm-3 {
+    background-image: url(/crackers.jpg);
+    background-position: center;
+    position: relative;
+    min-height: 1000px;
+    border: 1px solid;
+    border-color: #fff;
+  }
 
-.nav-logo img {
-  height: 90px;
-  margin-top: 30px;
+  .nav-logo img {
+    height: 90px;
+    margin-top: 30px;
+  }
+}
+//tablet
+@media (max-width: 900px){
+  .col-sm-3 {
+    background-image: url(/crackers.jpg);
+    background-position: center;
+    position: relative;
+    min-height: 1000px;
+    border: 1px solid;
+    border-color: #fff;
+  }
+
+  .nav-logo img {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+//phone
+@media (max-width: 620px){
+  .col-sm-3 {
+    background-image: url(/crackers.jpg);
+    background-position: center;
+    position: relative;
+    min-height: 1000px;
+    border: 1px solid;
+    border-color: #fff;
+  }
+
+  .nav-logo img {
+    height: 90px;
+    margin-top: 30px;
+  }
 }
 //---------------------------------------
 video {
