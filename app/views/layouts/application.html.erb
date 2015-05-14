@@ -19,6 +19,10 @@
       </div>
     <% end %>
 
+
+    <% if params[:controller] != 'welcome' %>
+    <div class="row">
+
       <div class="col-md-2 col-md-offset-1">
         <center>
           <div class='nav-logo'> <%= image_tag('gram-logo-outline1.png') %></div>
@@ -39,6 +43,9 @@
           <%= submit_tag "Search", class: 'btn btn-info' %>
         </center>
       </div>
+
+      <% end %>
+
 
       <%= yield %>
 

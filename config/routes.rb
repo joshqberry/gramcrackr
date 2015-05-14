@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  post '/welcome', to: 'welcome#local_photos'
+  post '/welcome', to: 'photos#local'
 
-  get '/local' => 'welcome#local_photos'
+  get '/local' => 'photos#local'
 
   get '/auth/instagram/callback', to: 'sessions#create'
 
