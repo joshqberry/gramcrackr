@@ -25,12 +25,9 @@
 
       <div class="col-xs-12 col-sm-3">
         <center>
-          <div class='nav-logo'> <%= image_tag('gram-logo-outline1.png') %></div>
+          <div class='nav-logo'><a href="/users"><%= image_tag('gram-logo-outline1.png') %></a></div>
           <div class='profile_pic'><%= image_tag(current_user.image) %></div>
           <%= link_to 'Log Out', logout_path, class: 'btn btn-info' %>
-          <br>
-          <br>
-          <%= link_to 'See local photos!', local_path, class: 'btn btn-info' %>
           <br>
           <br>
           Search for photos by tag:

@@ -19,6 +19,13 @@
   width: 200px;
   background: #70003F;
 }
+
+.btn-success {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 //screen
 @media (min-width: 768px){
   .col-sm-3 {
@@ -110,10 +117,10 @@ a.close-overlay {
   z-index: 100;
   width: 45px;
   height: 45px;
-  font-size: 20px;
-  font-weight: 700;
+  // font-size: 20px;
+  // font-weight: 700;
   color: #fff;
-  line-height: 45px;
+  // line-height: 45px;
   text-align: center;
   background-color: #000;
   cursor: pointer;
@@ -131,9 +138,9 @@ a.expand {
   // border: solid 5px #fff;
   text-align: center;
   color: #fff;
-  line-height: 9px;
-  font-weight: 400;
-  font-size: 9px;
+  // line-height: 9px;
+  // font-weight: 400;
+  // font-size: 9px;
   // border-radius: 30px;
 }
 
