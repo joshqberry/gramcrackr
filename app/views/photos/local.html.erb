@@ -32,5 +32,11 @@
     .mouseleave(function(){
         $(this).removeClass("hover");
     });
+    $('img').mouseenter(function(){
+      $(this).closest('#gramheart').prop('src', "gram-heart-rollover.png");
+    });
+    $('img').mouseleave(function() {
+      $(this).closest('#gramheart').prop('src', "gram-heart.png");
+    });
   });
 </script>
