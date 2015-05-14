@@ -19,6 +19,7 @@
       </div>
     <% end %>
 
+    <% if params[:controller] != 'welcome' %>
     <div class="row">
       <div class="col-md-2 col-md-offset-1">
         <center>
@@ -40,7 +41,7 @@
           <%= submit_tag "Search"%>
         </center>
       </div>
-
+      <% end %>
 
       <%= yield %>
 
