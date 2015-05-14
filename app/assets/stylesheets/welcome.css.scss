@@ -2,6 +2,7 @@
 @import "bootswatch/slate/variables";
 @import "bootstrap";
 @import "bootswatch/slate/bootswatch";
+@import url(http://fonts.googleapis.com/css?family=Lato);
 //screen
 @media (min-width: 768px){
   #photo {
@@ -14,15 +15,17 @@
     align: center;
     width: 100%;
     margin-top: 15%;
+    margin-bottom: 25%;
   }
-  .tagline {
-    margin-top: 1%;
-    margin-bottom: 40%;
-    color: #fff;
-    font-size: 34px;
-    // font-style: italic;
-    text-align: right;
-  }
+  // .tagline {
+  //   margin-top: 1%;
+  //   margin-bottom: 40%;
+  //   color: #fff;
+  //   font-size: 34px;
+  //   font-family: 'Lato', sans-serif;
+  //   // font-style: italic;
+  //   text-align: right;
+  // }
   .about {
     background-color: #fff;
     width: 100%;
@@ -31,13 +34,16 @@
     opacity: 0.8;
   }
   .about p {
+    text-align: center;
     color: #6A461F;
     font-size: 36px;
     margin-top: 5%;
+    font-family: 'Lato', sans-serif;
   }
   .login h3 {
     text-align: center;
     margin-bottom: 100px;
+    font-family: 'Lato', sans-serif;
   }
   .btn-default {
     height: 100px;
@@ -66,14 +72,14 @@
     width: 100%;
     margin-top: 15%;
   }
-  .tagline {
-    margin-top: 1%;
-    margin-bottom: 40%;
-    color: #fff;
-    font-size: 34px;
-    font-style: italic;
-    text-align: right;
-  }
+  // .tagline {
+  //   margin-top: 1%;
+  //   margin-bottom: 40%;
+  //   color: #fff;
+  //   font-size: 34px;
+  //   font-style: italic;
+  //   text-align: right;
+  // }
   .about {
     background-color: #fff;
     width: 100%;
@@ -85,10 +91,12 @@
     color: #6A461F;
     font-size: 30px;
     margin-top: 5%;
+    font-family: 'Lato', sans-serif;
   }
   .login h3 {
     text-align: center;
     margin-bottom: 100px;
+    font-family: 'Lato', sans-serif;
   }
   .btn-default {
     height: 100px;
@@ -117,14 +125,14 @@
     width: 100%;
     margin-top: 45%;
   }
-  .tagline {
-    margin-top: 1%;
-    margin-bottom: 80%;
-    color: #fff;
-    font-size: 24px;
-    font-style: italic;
-    text-align: right;
-  }
+  // .tagline {
+  //   margin-top: 1%;
+  //   margin-bottom: 80%;
+  //   color: #fff;
+  //   font-size: 24px;
+  //   font-style: italic;
+  //   text-align: right;
+  // }
   .about {
     background-color: #fff;
     width: 100%;
@@ -135,10 +143,12 @@
     color: #6A461F;
     font-size: 20px;
     margin-top: 10%;
+    font-family: 'Lato', sans-serif;
   }
   .login h3 {
     text-align: center;
     margin-bottom: 100px;
+    font-family: 'Lato', sans-serif;
   }
   .btn-default {
     height: 75px;
