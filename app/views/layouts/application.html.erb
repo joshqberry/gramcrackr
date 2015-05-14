@@ -19,15 +19,18 @@
       </div>
     <% end %>
 
+
+    <% if params[:controller] != 'welcome' %>
     <div class="row">
+
       <div class="col-md-2 col-md-offset-1">
         <center>
+          <div class='nav-logo'> <%= image_tag('gram-logo-outline1.png') %></div>
           <div class='profile_pic'><%= image_tag(current_user.image) %></div>
-          <h1><%= current_user.name %></h1>
-          <%= link_to 'Log Out', logout_path %>
+          <%= link_to 'Log Out', logout_path, class: 'btn btn-info' %>
           <br>
           <br>
-          <%= link_to 'See local photos!', local_path %>
+          <%= link_to 'See local photos!', local_path, class: 'btn btn-info' %>
           <br>
           <br>
           Search for photos by tag:
@@ -37,9 +40,11 @@
           <%= text_field_tag :searchterm %>
           <br>
           <br>
-          <%= submit_tag "Search"%>
+          <%= submit_tag "Search", class: 'btn btn-info' %>
         </center>
       </div>
+
+      <% end %>
 
 
       <%= yield %>

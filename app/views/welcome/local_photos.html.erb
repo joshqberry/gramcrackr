@@ -1,0 +1,9 @@
+
+
+  <div class="col-md-9">
+
+    <% @viewdata["data"].each do |val| %>
+      <img src="<%= val['images']['low_resolution']['url'] %>">
+    <% end %>
+
+  </div>
