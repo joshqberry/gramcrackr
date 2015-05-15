@@ -11,7 +11,7 @@
   opacity: 0.9;
   margin-bottom: 40px;
 }
-.col-md-9 .img {
+.col-sm-9 .img {
   border: 1.5px solid;
   border-color: #fff;
 }
@@ -20,13 +20,13 @@
   background: #70003F;
 }
 
-.btn {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0;
-}
+// .btn {
+//   display: block;
+//   width: 50%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border: 0;
+// }
 //screen
 @media (min-width: 768px){
   .col-sm-3 {
@@ -41,6 +41,13 @@
   .nav-logo img {
     height: 90px;
     margin-top: 30px;
+  }
+  .btn {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
   }
 }
 //tablet
@@ -58,9 +65,21 @@
     width: 90%;
     margin-top: 30px;
   }
+  .btn {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+  }
+  .form-control {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 //phone
-@media (max-width: 620px){
+@media (max-width: 480px){
   .col-sm-3 {
     background-image: url(/crackers.jpg);
     background-position: center;
@@ -73,6 +92,18 @@
   .nav-logo img {
     height: 90px;
     margin-top: 30px;
+  }
+  .btn {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+  }
+  .form-inline {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 //---------------------------------------
@@ -110,6 +141,7 @@ video {
   transition: all 0.5s;
 }
 
+
 a.close-overlay {
   display: block;
   position: absolute;
@@ -126,6 +158,7 @@ a.close-overlay {
   background-color: #000;
   cursor: pointer;
 }
+
 a.close-overlay.hidden {
   display: none;
 }
@@ -152,6 +185,13 @@ a.expand {
   width: 100%;
   height: 0;
 }
+#slide-up #vid .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
 #slide-up .overlay a.expand {
   left: 0;
   right: 0;
@@ -160,4 +200,8 @@ a.expand {
 }
 #slide-up .img.hover .overlay {
   height: 100%;
+}
+
+#slide-up #vid.hover .overlay {
+  height: 90%;
 }
